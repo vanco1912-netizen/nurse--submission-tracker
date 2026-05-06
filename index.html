@@ -153,13 +153,13 @@ tr:last-child td { border-bottom: none; }
 
 <div class="summary">
   <div class="summary-inner">
-    <div class="sum-item"><span class="sum-num blue" id="s-total">70</span><span class="sum-label">รายชื่อทั้งหมด</span></div>
+    <div class="sum-item"><span class="sum-num blue" id="s-total">71</span><span class="sum-label">รายชื่อทั้งหมด</span></div>
     <div class="sum-divider"></div>
     <div class="sum-item"><span class="sum-num green" id="s-received">0</span><span class="sum-label">ส่งแล้ว</span></div>
     <div class="sum-divider"></div>
     <div class="sum-item"><span class="sum-num orange" id="s-late">0</span><span class="sum-label">ส่งช้า</span></div>
     <div class="sum-divider"></div>
-    <div class="sum-item"><span class="sum-num red" id="s-pending">70</span><span class="sum-label">ยังไม่ส่ง</span></div>
+    <div class="sum-item"><span class="sum-num red" id="s-pending">71</span><span class="sum-label">ยังไม่ส่ง</span></div>
     <div class="sum-divider"></div>
     <div class="sum-item"><span class="sum-num" style="color:#6d28d9" id="s-incomplete">0</span><span class="sum-label">ส่งไม่ครบ</span></div>
   </div>
@@ -240,11 +240,11 @@ tr:last-child td { border-bottom: none; }
   <div>
     <div class="panel" style="min-height:500px">
       <div class="tabs" id="tabs">
-        <button class="tab active" data-filter="all" onclick="setTab(this)">ทั้งหมด <span class="cnt" id="t-all">70</span></button>
+        <button class="tab active" data-filter="all" onclick="setTab(this)">ทั้งหมด <span class="cnt" id="t-all">71</span></button>
         <button class="tab" data-filter="received" onclick="setTab(this)">ส่งแล้ว <span class="cnt" id="t-received">0</span></button>
         <button class="tab" data-filter="late" onclick="setTab(this)">ส่งช้า <span class="cnt" id="t-late">0</span></button>
         <button class="tab" data-filter="incomplete" onclick="setTab(this)">ไม่ครบ <span class="cnt" id="t-incomplete">0</span></button>
-        <button class="tab" data-filter="pending" onclick="setTab(this)">ยังไม่ส่ง <span class="cnt" id="t-pending">70</span></button>
+        <button class="tab" data-filter="pending" onclick="setTab(this)">ยังไม่ส่ง <span class="cnt" id="t-pending">71</span></button>
       </div>
       <div class="filter-bar">
         <div class="search-wrap">
@@ -291,7 +291,6 @@ tr:last-child td { border-bottom: none; }
 const GAS_URL = 'https://script.google.com/macros/s/AKfycbwhQg9nozf9J4-joH6VGedHAOKJJXMRFiMD6xHAY0GGwOdpqxyDhGwd9QW83m9FXsnl4w/exec';
 
 const NURSES = [
-  {m:'เมษายน', prefix:'นางสาว', fname:'สิริวิมล',   lname:'บุญมา',              dept:'กลุ่มงานการพยาบาลผู้ป่วยออร์โธปิดิกส์',       deadline:'2569-04-01'},
   {m:'เมษายน', prefix:'นางสาว', fname:'นิธิกานต์',  lname:'คำกระจาย',           dept:'กลุ่มงานการพยาบาลผู้ป่วยนอก',                deadline:'2569-04-01'},
   {m:'เมษายน', prefix:'นางสาว', fname:'สุจิตรา',    lname:'ไชยานุกูล',          dept:'กลุ่มงานการพยาบาลผู้ป่วยอายุรกรรม',          deadline:'2569-04-01'},
   {m:'เมษายน', prefix:'นางสาว', fname:'อลิสรา',     lname:'ศุภกิจ',             dept:'กลุ่มงานการพยาบาลผู้ป่วยหนัก',               deadline:'2569-04-01'},
@@ -322,6 +321,7 @@ const NURSES = [
   {m:'มิถุนายน', prefix:'นางสาว', fname:'พิลาวรรณ',   lname:'สายชมภู',    dept:'กลุ่มงานการพยาบาลผู้ป่วยศัลยกรรม',           deadline:'2569-06-29'},
   {m:'มิถุนายน', prefix:'นางสาว', fname:'ฐายิกา',     lname:'วิจิตร',     dept:'กลุ่มงานการพยาบาลผู้ป่วยหนัก',               deadline:'2569-06-29'},
   {m:'มิถุนายน', prefix:'นาย',    fname:'เขมนันท์',   lname:'พูลสุขโข',   dept:'กลุ่มงานการพยาบาลผู้ป่วยอายุรกรรม',          deadline:'2569-06-29'},
+  {m:'มิถุนายน', prefix:'นางสาว', fname:'ศิรินันท์',  lname:'จิตรมั่น',   dept:'กลุ่มงานการพยาบาลผู้ป่วยหนัก',               deadline:'2569-06-29'},
   {m:'กรกฎาคม', prefix:'นางสาว', fname:'สุดารัตน์',   lname:'ศิริบูรณ์',         dept:'กลุ่มงานการพยาบาลผู้ป่วยศัลยกรรม',             deadline:'2569-07-20'},
   {m:'กรกฎาคม', prefix:'นางสาว', fname:'กรรติยา',     lname:'เจริญรัมย์',        dept:'กลุ่มงานการพยาบาลผู้ป่วยหนัก',                 deadline:'2569-07-20'},
   {m:'กรกฎาคม', prefix:'นางสาว', fname:'ปภัสรา',      lname:'จันทะวงค์',         dept:'กลุ่มงานการพยาบาลผู้ป่วยห้องผ่าตัด',           deadline:'2569-07-20'},
